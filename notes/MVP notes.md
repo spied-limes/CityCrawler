@@ -27,11 +27,11 @@
 
 ## React
 
-| Component         | What does it do                                      |
-| ----------------- | ---------------------------------------------------- |
-| `<SignupPage />`  | simple signup form                                   |
-| `<LandingPage />` | redirect when signed in                              |
-| `<Maps />`        | brings up directions on page, (no redir if possible) |
+| For MVP | Component         | What does it do                                      |
+| ------- | ----------------- | ---------------------------------------------------- |
+| NO      | `<SignupPage />`  | simple signup form                                   |
+| YES     | `<LandingPage />` | redirect when signed in                              |
+| YES     | `<Maps />`        | brings up directions on page, (no redir if possible) |
 
 
 ## Redux
