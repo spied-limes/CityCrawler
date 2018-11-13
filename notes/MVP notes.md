@@ -5,7 +5,7 @@
 | Model    | Field                                                                |
 | -------- | -------------------------------------------------------------------- |
 | Places   | Name, Street, City, State, Zip, Coords, Description (via wiki API?)  |
-| User     | FName, LName, Over18?, Email, Name, Street, City, State, Zip, Coords |
+| User     | FName, LName, isAdult?, Email, Name, Street, City, State, Zip, Coords |
 | Activity | Name, UserCheckIn (primary), Description                             |
 
 
@@ -18,7 +18,7 @@
 
 ### `POST`
 
-- `/user/homebase`
+- `/users/homebase`
 - `places/checkin`
 
 ### Other
