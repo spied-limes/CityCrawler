@@ -11,7 +11,7 @@ const User = db.define('user', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  over18: {
+  isAdult: {
     type: Sequelize.BOOLEAN,
     allowNull: false
   },
@@ -35,6 +35,11 @@ const User = db.define('user', {
     type: Sequelize.STRING,
     unique: true,
     allowNull: false
+  },
+  userType: {
+    type: Sequelize.ENUM,
+    values: ['regular', 'admin'],
+    defaultValue: 'regular'
   },
   // allowed to be null for now, maybe have to be required later? -RD
   latitude: {
