@@ -8,7 +8,8 @@
 
 ## IDEA REJECTION
 
-- Board game NO
+- ~Board game NO~
+- [x] Rejection written and posted
 
 ## Names
 
@@ -26,10 +27,11 @@
 - Location permissions
 - Finalizing web app vs React Native
 - WebAR to show stats on landmarks
+- pictures you take compiled to a shareable album to facebook, etc.
 
 ## Game Mechanics
 
--
+- **FILL IN LATER HERE**
 
 ## APP IDEAS: WTF the app could does
 
