@@ -36,6 +36,13 @@ const User = db.define('user', {
     unique: true,
     allowNull: false
   },
+  // allowed to be null for now, maybe have to be required later? -RD
+  latitude: {
+    type:Sequelize.STRING
+  },
+  longitude: {
+    type: Sequelize.STRING
+  },
   password: {
     type: Sequelize.STRING,
     // Making `.password` act like a func hides it when serializing to JSON.
