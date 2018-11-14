@@ -2,7 +2,7 @@
   {
     "firstName": "Babb",
     "lastName": "Buttress",
-    "isAdult": "Harler",
+    "isAdult": true,
     "streetAddress": "3641 Bartillon Hill",
     "city": "Montgomery",
     "state": "AL",
