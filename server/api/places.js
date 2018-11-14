@@ -1,5 +1,6 @@
 const router = require('express').Router()
 const {Place} = require('../db/models')
+const {isLoggedIn, isAdmin, isLoggedInAsSelf} = require('./userTypeChecker')
 module.exports = router
 
 const fieldReducer = (bodyObj, options) => {
