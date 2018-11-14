@@ -1,19 +1,31 @@
 'use strict'
 
 const db = require('../server/db')
-const {User} = require('../server/db/models')
+const {User, Place, Activity} = require('../server/db/models')
+
+/*
+   _____               ______        __
+  / ___/___  ___  ____/ / __ \____ _/ /_____ _
+  \__ \/ _ \/ _ \/ __  / / / / __ `/ __/ __ `/
+ ___/ /  __/  __/ /_/ / /_/ / /_/ / /_/ /_/ /
+/____/\___/\___/\__,_/_____/\__,_/\__/\__,_/
+*/
+
+const Users = require('./seed-data/users.json')
 
 async function seed() {
   await db.sync({force: true})
   console.log('db synced!')
 
-  const users = await Promise.all([
-    User.create({email: 'cody@email.com', password: '123'}),
-    User.create({email: 'murphy@email.com', password: '123'})
-  ])
+  await Promise.all(Users.map(user => User.create(user)))
 
-  console.log(`seeded ${users.length} users`)
-  console.log(`seeded successfully`)
+  console.log(`\n########### SEEDING REPORT ###########\n`)
+  console.log(`Seed data ver. 11/05/18\n`)
+  console.log(`Created ${Users.length} categories.`)
+
+  // console.log(`Associated ${JellyCat.length} jellies to categories.\n`)
+  console.log(`Seeding completed successfully!\n`)
+  console.log(`######################################\n`)
 }
 
 // We've separated the `seed` function from the `runSeed` function.
