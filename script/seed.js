@@ -20,8 +20,8 @@ async function seed() {
   await Promise.all(Users.map(user => User.create(user)))
 
   console.log(`\n########### SEEDING REPORT ###########\n`)
-  console.log(`Seed data ver. 11/05/18\n`)
-  console.log(`Created ${Users.length} categories.`)
+  console.log(`Seed data ver. 11/14/18\n`)
+  console.log(`Created ${Users.length} user.`)
 
   // console.log(`Associated ${JellyCat.length} jellies to categories.\n`)
   console.log(`Seeding completed successfully!\n`)

@@ -1,16 +1,16 @@
 [
   {
-    "firstName": "Babb",
-    "lastName": "Buttress",
+    "firstName": "Hello",
+    "lastName": "Test",
     "isAdult": true,
     "streetAddress": "3641 Bartillon Hill",
-    "city": "Montgomery",
-    "state": "AL",
+    "city": "New York",
+    "state": "NY",
     "zipCode": "36195",
-    "email": "bharler0@pinterest.com",
-    "latitude": "32.3544",
-    "longitude": "-86.2843",
-    "password": "zqlpFAzmo3Kz",
+    "email": "hello@test.com",
+    "latitude": "40.758869",
+    "longitude": "-73.985176",
+    "password": "test123",
     "salt": "OZkct6GkUp",
     "googleId": "1PPh64S5TS16v4fLYtadKL9YrFR81e9Jxt"
   }
